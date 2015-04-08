@@ -1,0 +1,108 @@
+define.env=online
+
+res.date=.141211.min
+taskres.date=.140815.min
+
+PAYPAL_URL=https://www.paypal.com/cgi-bin/webscr
+PAYPAL_IPN_URL=http://1fpay.com/paypal/ipn
+PAYPAL_RECEIVE_ACCOUNT=gl76222@gmail.com
+PAYPAL_RETURN_URL=http://1fpay.com/paypal/return
+
+MYCARD_INGAME_FACID=GFD01173
+MYCARD_INGAME_KEY1=mycardgetapk
+MYCARD_INGAME_KEY2=583377397168c13879cb2407
+MYCARD_INGAME_AUTH_URL=https://b2b.mycard520.com.tw/MyCardIngameService/Auth
+MYCARD_INGAME_SERVER_SIDE_TOPUP_URL=https://b2b.mycard520.com.tw/MyCardIngameService/Confirm
+MYCARD_INGAME_WEB_SIDE_TOPUP_URL=https://redeem.mycard520.com/
+MYCARD_INGAME_QUERY_TRANSACTION_STATUS_URL=https://b2b.mycard520.com.tw/MyCardIngameService/CheckTradeStatus
+
+MYCARD_POINT_FACID=MFD0000535
+MYCARD_POINT_SERVICEID=MFSD001011
+MYCARD_POINT_AUTH_URL=https://b2b.mycard520.com.tw/MyCardPointPaymentServices/MyCardPpServices.asmx/MyCardMemberServiceAuth
+MYCARD_POINT_LOGIN_RETURN_URL=http://1fpay.com/mycardapi/point/loginreturn
+MYCARD_POINT_MEMBER_LOGIN_SERVICE_URL=https://member.mycard520.com.tw/MemberLoginService/
+MYCARD_POINT_MEMBER_COST_LIST_RENDER_URL=https://b2b.mycard520.com.tw/MyCardPointPaymentServices/MyCardPpServices.asmx/MemberCostListRender
+
+MYCARD_BILLING_FACID=getapk
+MYCARD_BILLING_AUTH_URL=https://b2b.mycard520.com.tw/MyCardBillingRESTSrv/MyCardBillingRESTSrv.svc/Auth/%s/%s/%s
+MYCARD_BILLING_USER_ENTRY_URL=https://www.mycard520.com.tw/MyCardBilling/?AuthCode=%s
+MYCARD_BILLING_CERTIFY_URL=https://b2b.mycard520.com.tw/MyCardBillingRESTSrv/MyCardBillingRESTSrv.svc/TradeQuery?AuthCode=%s
+MYCARD_BILLING_CONFIRM_URL=https://b2b.mycard520.com.tw/MyCardBillingRESTSrv/MyCardBillingRESTSrv.svc/PaymentConfirm?CPCustId=%s&AuthCode=%s
+MYCARD_BILLING_PAYMENT_QUERY_URL=https://b2b.mycard520.com.tw/MyCardBillingRESTSrv/MyCardBillingRESTSrv.svc/PaymentQuery/%s
+MYCARD_BILLING_PRODUCT_QUERY_URL=https://b2b.mycard520.com.tw/MyCardBillingRESTSrv/MyCardBillingJsonRESTSrv.svc/ProductQueryForPrice/%s/%s
+
+MYCARD_IPS=210.61.134.145,210.71.189.165,220.130.127.125,54.199.128.65
+
+GASH_PIN_MID=M1000336
+GASH_PIN_CID=C003360000537
+GASH_PIN_KEY=7By5XSJu0zY3tPTcuzV5oYyZXl/JlowE
+GASH_PIN_IV=/vkAyJIh358=
+GASH_PIN_PWD=5e2340936jw34ta
+GASH_PIN_RETURN_URL=http://1fpay.com/gashpin/api/payreturn
+
+GASH_BILLING_MID=M1000337
+GASH_BILLING_CID=C003370000538
+GASH_BILLING_KEY=boffjEKT9uiGYhOjupKPPcc6/cf7bzmg
+GASH_BILLING_IV=xHv/ofDmm5w=
+GASH_BILLING_PWD=r5r345098qytgj34
+GASH_BILLING_RETURN_URL=http://1fpay.com/gashbilling/api/payreturn
+
+GASH_GPS_TRANSATION_URL=https://api.eg.gashplus.com/CP_Module/order.aspx
+GASH_GPS_CHECKORDER_URL=https://api.eg.gashplus.com/CP_Module/checkorder.asmx
+GASH_GPS_SETTLE_URL=https://api.eg.gashplus.com/CP_Module/settle.asmx
+
+GASH_IPS=112.121.66.10
+
+MOL_PAYOUT_APPLICATION_CODE=tOr9lipvT1Z6rqhnhQKmXZMHDgewQiRg
+MOL_PAYOUT_SECRET_KEY=QlO9IFMaqyw6ONEKHnhJuwgZVGBbnFoD
+MOL_PAYOUT_VERSION=v1
+MOL_PAYOUT_URL=https://api.mol.com/payout
+MOL_PAYOUT_CALLBACK_URL=http://1fpay.com/molapi/payout/callback
+MOL_PAYOUT_RETURN_URL=http://1fpay.com/molpayout/return
+
+MOL_PAYOUT_IPS=202.76.234.94,202.76.234.68
+
+ALIPAY_MY_PUBLIC_KEY = MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCQL7UX+zInQardPy4PP1FyFkh LxR4De4pb4lP4kbr5aXoqPwoLA90XO51TDec1UZde3sYqdgebY8zgi8SGjntPTgj /8Z9h0Pnx0UJIGcuWGW1fn4++Vb4Nm2vffXt+9D17GIPcN4luuweqMxakbmD5Baz e9THoAvTMciDW+QeSQIDAQAB
+ALIPAY_MY_PRIVATE_KEY = MIICdQIBADANBgkqhkiG9w0BAQEFAASCAl8wggJbAgEAAoGBAMJAvtRf7MidBqt0/Lg8/UXIWSEvFHgN7ilviU/iRuvlpeio/CgsD3Rc7nVMN5zVRl17exip2B5tjzOCLxIaOe09OCP/xn2HQ+fHRQkgZy5YZbV+fj75Vvg2ba999e370PXsYg9w3iW67B6ozFqRuYPkFrN71MegC9MxyINb5B5JAgMBAAECgYAOCN2AvJl/+RBlTOOBcC6gXxRJeHxTHDaL2doi4mdbXdE52RO211AaiShVYzdVZndaA7TmGEdcE3BYOVyrQyfSIuRWsqRGPPHhb0UhNVAWr3rNr73oZTROb/0PIhQYMSVsuevLuMhpSsh/PH8ds6hDwb1CPiQH5alPGF8OMIvrPQJBAO0lFSy+MHNeS0D6gDTplwTssSkCwnf2APNMGBTCPjMYHWiZ2FRnNFTF2HOnGV+2gn827MUaRDKAP0INpCNaBrsCQQDRsqCV/ne5OQOQsf2D4pXjvz0uajtnjTX2VNbEqxpHsEGZbyJ7IEWfXLeVTxcy4Ov74M3v3GkPg6S2yndvydjLAkA/B8swAEEKePaRh8NJzQhZw7t2xggAMH+iKwh/g/1aQT+XzMRF8sRi/87/Nlu1J+JZg7S80rVrotCtcsi8qLH/AkAFm+qRuInJSY4f27L1SSVLPz1KtYq7PVq5KRHJlu4QBtXqXb+lXXqfRaKfessbEEsfpKa9iL7CrHnGben98n87AkB3LGhhakZ/VKDwpq3Er4mYcdx+NafoDbwPa2leSRyIs/WzFaVsNsgeB5By5CQql2sxfkdNt4JWAeE/Twnul2qX
+ALIPAY_PUBLIC_KEY = MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCXdpFH9J3glOBARwczkOeT05CN/JDNivx4YJjH wloxBe1ELTxJkuwEuD/djm1ysmUxm3NMaJg/T0pSUqLEL+DfUx5WXrfohIvF6tA1ZfI/5LbwIXbo Wbr2ujcysN9XA6KyiTCpydVmjKiJy/hRiqza6qiIohnqyPZZWc2Yywq2KwIDAQAB
+ALIPAY_PARTNER_ID = 2088411179042096
+ALIPAY_SECURITY_VALIDATE_KEY = 43wbe3afdj7l72ima6cbh1cou9howq7v
+ALIPAY_GATE_WAY_URL = http://wappaygw.alipay.com/service/rest.htm?
+ALIPAY_SELLER_ACCOUNT_NAME = jodotech@yeah.net
+ALIPAY_CALL_BACK_URL = http://1fpay.com/alipay/return
+ALIPAY_CALL_NOTIFY_URL = http://1fpay.com/alipay/return
+
+db.config.checkOutTimeOut =12000
+db.config.dbName =paycenter
+db.config.ip =pcdb.cidlnevemmez.ap-northeast-1.rds.amazonaws.com
+db.config.maxIdleTime = 1800
+db.config.maxPoolSize = 40
+db.config.minPoolSize = 1
+db.config.driverClass = com.mysql.jdbc.Driver
+db.config.userName = paycenter
+db.config.password = a2496418650f87e02356319b8aefc84a
+db.config.testConnOnCheckin = false
+#db.config.ip.readonly =pcdb-readreplica.cidlnevemmez.ap-northeast-1.rds.amazonaws.com
+
+HFB_AGENT_ID = 1755897
+HFB_SECRET_KEY = E1897A89D63C41C59185A3E9
+HFB_CALLBACK_URL = http://1fpay.com/huifubao/callback
+HFB_PAY_URL = https://pay.Heepay.com/Api/CardPaySubmitService.aspx?%s
+HFB_QUERY_URL  = http://Query.Heepay.com/Api/CardPayQueryService.aspx?%s
+
+EFUN_PAY_FROM = yzkj
+EFUN_PARTNER_CODE = yzkj
+EFUN_SAND_BOX = false
+EFUN_SECKET_KEY = F6D462F768661BF5C3E9D272B92D2A31
+EFUN_DELIVERY_URL = http://ptexchange.efuntw.com/partner_order.shtml
+EFUN_ROLE_QUERY = http://ptgame.efuntw.com/partners_gainRolesLevel.shtml
+
+DATACENTER_BLACK_LIST_SERVICE = http://172.31.13.67/datacenter/pc
+
+usercenter.only=0
+
+APPSERVER_HOST =127.0.0.1
+APPSERVER_PORT =30002
+
+cpay_delivery_proxy_host = 127.0.0.1
+cpay_delivery_proxy_port = 1081

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>notify</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <listener>
+    <listener-class>com.jodo.notify.util.InitService</listener-class>
+  </listener>
+  
+  <!-- 字符filter -->
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>com.jodo.notify.util.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  	<!-- 管理后台filter -->
+	<filter>
+		<filter-name>AdminFilter</filter-name>
+		<filter-class>com.jodo.notify.util.AdminFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>AdminFilter</filter-name>
+		<url-pattern>/notifyadmin/*</url-pattern>
+	</filter-mapping>
+  
+  <!-- 微信通知接收验证接口 -->
+  	<servlet>
+		<servlet-name>wx_EntryServlet</servlet-name>
+		<servlet-class>com.jodo.notify.bll.NotifyWxEntryServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+		<servlet-name>wx_EntryServlet</servlet-name>
+		<url-pattern>/wx/entry</url-pattern>
+	</servlet-mapping>
+	
+  <!-- 内部发送信息接口 -->
+  	<servlet>
+		<servlet-name>wx_SendmsgServlet</servlet-name>
+		<servlet-class>com.jodo.notify.bll.NotifySendMsgServlet</servlet-class>
+	</servlet>
+  	<servlet-mapping>
+		<servlet-name>wx_SendmsgServlet</servlet-name>
+		<url-pattern>/wx/sendmsg</url-pattern>
+	</servlet-mapping>
+<!-- 管理后台接口 -->
+ <servlet>
+    <servlet-name>notifyAdminServlet</servlet-name>
+    <servlet-class>com.jodo.notify.bll.NotifyAdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>notifyAdminServlet</servlet-name>
+    <url-pattern>/notifyadmin/*</url-pattern>
+  </servlet-mapping> 
+  
+  <!-- 登陆验证 -->
+ <servlet>
+    <servlet-name>notifyAdminLoginServlet</servlet-name>
+    <servlet-class>com.jodo.notify.bll.NotifyAdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>notifyAdminLoginServlet</servlet-name>
+    <url-pattern>/login/*</url-pattern>
+  </servlet-mapping> 
+  
+</web-app>
